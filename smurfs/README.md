@@ -59,6 +59,8 @@
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 
+------
+
 ## React Commands
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
