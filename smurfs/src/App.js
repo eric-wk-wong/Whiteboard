@@ -1,8 +1,6 @@
 import React from 'react';
 import HomepageImage from './components/HomepageImage';
 import NavigationBar from './components/NavigationBar';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
