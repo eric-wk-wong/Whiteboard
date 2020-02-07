@@ -1,7 +1,7 @@
 # Project for CIS 5800
 
-Eric Wong
-John Huang
-Yunhao Gao
-Zhengjian Liu
-Priscilla Shum
+Eric Wong <br />
+John Huang <br />
+Yunhao Gao <br />
+Zhengjian Liu <br />
+Priscilla Shum <br />
