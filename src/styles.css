@@ -1,0 +1,414 @@
+.App {
+  text-align: center;
+}
+
+.App-body {
+  background:linear-gradient(to bottom,rgb(255, 255, 255),rgba(25, 127, 150, 0.318),rgb(255, 255, 255));
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  background-attachment: fixed;
+}
+.start{
+  background:linear-gradient(to right,rgb(86, 188, 202),rgb(37, 85, 131));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  justify-content: right;
+  font-size: 1.5em;
+  filter:blur(0px);
+  background-attachment: fixed;
+}
+
+.HomeBG{
+  background:linear-gradient(to right,rgb(86, 188, 202),rgb(22, 71, 117));
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.moment{
+margin: -5.5%;
+}
+.toprow{
+  padding-top: 65px;
+}
+.rowcenter{
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+/*expand animation*/
+.expand{
+  transition: transform 1s;
+}
+.expand:hover{
+  transform: scale(1.05);
+}
+.menu-item{
+  padding-top: 3px;
+}
+
+
+
+
+.list{
+  margin: 1px;
+  border-radius: 10px;
+}
+
+
+
+/*frosted glass effect*/
+.layoutbg{
+
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.219);  /*BG*/
+  margin: 1%;
+}
+
+
+.layoutbg:before{
+  content: "";
+  position: absolute;
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.753);
+  filter: blur(10px);
+  margin: -50px;
+  z-index: -1;
+}
+
+
+#navbg{
+
+  max-height: 50px; /* nav bar height*/
+  border-radius: 0px;
+  background-color:rgba(255, 255, 255, 0.585);
+}
+
+.acclogo{
+  margin-left: 35%;
+}
+
+#accicon{
+  margin-top: -10px;
+  border-radius:10px;
+
+}
+.loginpage{
+  font-size: 18pt;
+}
+
+
+.courseinfo{
+  text-align: left;
+  font-size: 11pt;;
+}
+
+.courseinfo h5{
+  font-size: 1.1em;
+  padding-left: 10px;
+  padding-top: 2%;
+}
+
+.courses{
+  width: 100%;;
+}
+.scroll Col{
+  overflow:scroll;
+  max-height: 200px;
+}
+
+
+.contain{
+  width: 30%;
+  color: #000000;
+  border-radius: 10px;
+}
+.startpageicon{
+  margin-bottom: 5%;
+  margin-top: 30px;
+}
+
+.homepageicon{
+  padding-left: 70px;
+}
+
+
+button{
+  width: 100%;
+}
+
+h1{
+  display: flex;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.icon{
+  width:100%;
+  margin: 2%;
+  padding-top: 20px;
+}
+
+
+.card{
+  margin-top: 17px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.loginicon{
+  margin-top: -25px;
+  margin-bottom: -18px;
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+
+.shrink{
+  margin-top: 12px;
+  max-width: auto;
+  min-width: 100px;
+}
+
+.card-body{
+  width: auto;
+  margin-top: -20px;
+}
+
+
+/*Background hover section*/
+
+.textOverImage{
+  position:relative;
+  width:100%;
+  height:100vh;
+  float:left;
+  background-size:100%;
+  background-position:center;
+  transition:0.5s;
+  overflow:hidden;
+}
+
+.textOverImage:hover{
+  background-size:100%;
+}
+
+.textOverImage:before{
+position: absolute;;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+transform:translateX(100%);
+  background-color:rgba(255, 255, 255, 0);
+  color:#fff;
+  padding:0 8px;
+  content:attr(data-title);
+  transition:0.5s 0.1s;
+  color:rgba(255, 255, 255, 0);
+  font-weight:bold;
+  font-size:80pt;
+  font-family: geroge;
+}
+
+.textOverImage:after{
+  position: relative;;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  color:#fff;
+  padding:8px;
+  content:attr(data-text);
+  transition:0.5s;
+  padding-top:2em;
+  margin-top:8px;
+  transform:translateY(100%);
+  opacity:0;
+  font-family: 'Roboto', ;
+  font-size: 70pt;
+}
+
+
+.textOverImage:hover:after{
+  transform:translateY(0);
+  transition:0.5s 0.1s;
+  opacity:0.8; 
+}
+.textOverImage:hover:before{
+  transform:translatey(0);
+  background-color:rgba(130, 130, 130, 0.454); /*Background color  */
+  opacity: 0.7;
+  transition:1s;
+  filter: blur(5px);
+  
+}
+
+
+
+/*Side bar section   */
+
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #02a4fa;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 25px;
+  left: 25px;
+  top: 12px;
+  transition: transform 1s;
+}
+
+.bm-burger-button:hover{
+  transform: rotate(270deg) scale(1.3);
+
+}
+
+.bm-burger-bars {
+  background: #126bba;  /* side bar button color*/
+}
+
+#progress{
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #ffffff00;
+}
+
+.bm-menu {
+  background:rgba(255, 255, 255, 0.818);  /*Side bar background color   */
+  width: 60%; /*side bar width*/
+  padding-top:2.4em;
+  margin-left: -5%;
+  margin-right: 30px;
+  font-size: 1.1em;
+  border-radius: 10px;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/*Login / Signup*/
+input {
+  background-color: rgb(255, 255, 255);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+  width: 100%;
+  height: 40px;
+  box-shadow: black;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+button:active {
+	transform: scale(0.9);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+
+form {
+	display: flex;
+	justify-content: top;
+  flex-direction:column;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+  text-align: center;
+}
+
+/*To Do List*/
+.time-entry{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.time{
+  color: #9d06de;
+}
+
+.logform{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+
+.loginput{
+  background-color: rgba(211, 211, 211, 0.4);
+}
+

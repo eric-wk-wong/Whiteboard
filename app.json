@@ -1,7 +1,0 @@
-{
-  "buildpacks": [
-    {
-      "url": "ew0n/cis-5800"
-    }
-  ]
-}
