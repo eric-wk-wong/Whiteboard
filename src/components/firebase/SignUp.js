@@ -22,7 +22,7 @@ const SignUp = ({ history }) => {
 
   return (
     <div>
-    <div className="HomeBG">
+    <div className="P_HomeBG">
         <center><img src={baruch} width="200px" alt="baruch logo" className="startpageicon"/></center>
         <Container>
             <Row>
@@ -42,7 +42,7 @@ const SignUp = ({ history }) => {
                   <hr/>
                   <ButtonGroup vertical>
                   <Button size='lg' type="submit"><strong>Sign Up</strong></Button>
-                  <Button size='sm' variant="info" componentClass={Link} href="/login" to="/"><strong>Go Back to Login</strong></Button>
+                  <Button size='sm' variant="info" componentClass={Link} href="/login" to="/"><strong>Go Back</strong></Button>
                   </ButtonGroup>
                 </form>
               </div>

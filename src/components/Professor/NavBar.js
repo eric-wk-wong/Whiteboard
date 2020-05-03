@@ -1,0 +1,31 @@
+import React, {Component} from 'react';
+import {Navbar,Button,ButtonGroup} from 'react-bootstrap';
+import{Link} from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner';
+import baruch from '../images/baruchlogo.png';
+import SideBar from '../Features/sidebar';
+
+class NavBar extends Component {
+  render(){
+return (
+    <div>
+        <Navbar  id="navbg" bg="clear" fixed="top">
+        <SideBar/>
+        <a componentClass={Link} href="/P_homepage" className="homepageicon expand"><img src={baruch} width="150px" alt="baruch logo"/></a>
+  <Navbar.Toggle />
+  <Navbar.Collapse className="justify-content-end">
+    <Navbar.Text>
+    <Spinner animation="grow" variant="primary" /> 
+    <ButtonGroup>
+    <div className="expand"><Button id="accicon" variant="primary" componentClass={Link} href="/AccInfo" to="/">My Account</Button></div>
+    </ButtonGroup>
+    </Navbar.Text>
+  </Navbar.Collapse>
+</Navbar>
+</div>
+
+);
+}
+}
+
+export default NavBar;

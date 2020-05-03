@@ -4,7 +4,7 @@ import baruch4 from '../Carousels-images/baruch4.gif';
 
 export default function Carousels(props) {
   return (
-<Carousel className="moment">
+<Carousel className="Carousels">
   <Carousel.Item>
     <img
       className="d-block w-100"

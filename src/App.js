@@ -11,9 +11,16 @@ import Login from './components/firebase/Login';
 import SignUp from './components/firebase/SignUp';
 import Blogging from './components/Blog/Blogging';
 import Add_Course from './components/NavBar/Add_Course';
-import Edit_AccInfo from './components/NavBar/Edit_AccInfo'
-
-
+import Edit_AccInfo from './components/NavBar/Edit_AccInfo';
+import P_homepgae from './components/Professor/P_homepage';
+import P_login from './components/firebase/P_login';
+import CIS5800 from './components/page/cis5800';
+import CIS4160 from './components/page/cis4160';
+import HelpDesk from './components/Features/helpdesk';
+import CIS4160_grading from './components/page/cis4160_grading';
+import CIS5800_grading from './components/page/cis5800_grading';
+import P_Blogging from './components/Professor/P_blogging';
+import CIS4160_course from './components/courses/CIS4160';
 
 class App extends Component {
   render(){
@@ -21,24 +28,33 @@ class App extends Component {
     <Router>
       
     <div className="App"> 
-      <header className="App-header">
+      <header>
       <AuthProvider>
         <Switch>
         <PrivateRoute exact path='/' component={Homepage} />
         <Route path='/login' component={Login} />
+        <Route path='/P_login' component={P_login} />
         <Route path='/signup' component={SignUp} />
         <Route path='/Schedule' component={Schedules} />
+        <Route path='/P_homepage' component={P_homepgae} />
         <Route path='/AccInfo' component={AccInfo} />
         <Route path='/Blogging' component={Blogging} />
+        <Route path='/P_Blogging' component={P_Blogging} />
         <Route path='/Add_Course' component={Add_Course} />
         <Route path='/Edit_AccInfo' component={Edit_AccInfo}/>
+        <Route path='/HelpDesk' component={HelpDesk}/>
+        <Route path='/CIS5800' component={CIS5800}/>
+        <Route path='/CIS4160' component={CIS4160}/>
+        <Route path='/CIS4160_course' component={CIS4160_course}/>
+        <Route path='/CIS4160_grading' component={CIS4160_grading}/>
+        <Route path='/CIS5800_grading' component={CIS5800_grading}/>
         </Switch>
         
         </AuthProvider>
       </header>
       <div className="footer">
       <footer>Powered By Team Smurfs | Created By Team Smurfs</footer>
-      <footer>Version 2.0.2 | Apr.3.2020</footer>
+      <footer>Version 2.1.0 | April.28.2020</footer>
       </div>
     </div>
     </Router>

@@ -24,7 +24,7 @@ return (
       <br/>
         <h5>Total Confirmed Cases: 2500</h5>
         <hr/>
-        <div className="anno">
+        <div className="announcement">
         <p><strong><a rel="noopener noreferrer" href="https://www.cuny.edu/coronavirus/" target="_blank">CORONAVIRUS UPDATES: </a></strong>
         No on-campus classes from March 12 - 18. Most classes will move to distance learning on March 19 for the remainder of the semester. CUNY schools, dorms, libraries, research facilities, day care centers, and labs remain open. </p>
       </div>
@@ -61,12 +61,14 @@ return (
     <Row className="scroll"> 
       <Col className="expand">
       <Card bg="primary" text="white" style={{ width:"auto", marginTop:"10px"}}>
-    <Card.Header><h5>Header</h5></Card.Header>
+    <Card.Header><h6>Baruch College Receives Top Rankings:</h6></Card.Header>
     <Card.Body>
-      <Card.Title><h6>Primary Card Title</h6></Card.Title>
-      <Card.Text><h6>
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-        </h6>
+      <Card.Text>
+        <div class="cardlist">
+        <a href="#">2021 Best Graduate Schools</a>
+        </div>
+          
+
         </Card.Text>
         </Card.Body>
         </Card>

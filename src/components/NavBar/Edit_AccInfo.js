@@ -11,14 +11,45 @@ return (
   <div className="HomeBG">
     <NavBar/>
     <div>
-        
         <Container>
           <Row className="rowcenter toprow">
-            <Col xs={6} md={6} className="expand">
-                <h1>Edit Personal information is still progressing...</h1>
+            <Col xs={12} md={12} className="expand">
+            <div className="blog">
+            <h5>First row.</h5>
+            </div>
             </Col>
 
           </Row>
+          <hr/>
+
+          <Row className="rowcenter">
+            <Col xs={5} md={5} className="expand">
+            <div className="blog">
+            <h5>second row.</h5>
+            </div>
+            </Col>
+            <Col xs={6} md={6} className="expand">
+            <div className="blog">
+            <h5>second row.</h5>
+            </div>
+            </Col>
+
+          </Row>
+
+          <Row className="rowcenter">
+            <Col xs={5} md={5} className="expand">
+            <div className="blog">
+            <h5>second row.</h5>
+            </div>
+            </Col>
+            <Col xs={6} md={6} className="expand">
+            <div className="blog">
+            <h5>second row.</h5>
+            </div>
+            </Col>
+
+          </Row>
+
         </Container>
       
         </div>

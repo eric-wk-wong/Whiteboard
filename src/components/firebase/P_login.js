@@ -18,7 +18,7 @@ const Login = ({ history }) => {
         await firebase
           .auth()
           .signInWithEmailAndPassword(email.value, password.value);
-        history.push("/");
+        history.push("/P_homepage");
       } catch (error) {
         alert(error);
       }
@@ -28,16 +28,16 @@ const Login = ({ history }) => {
   const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
-    return <Redirect to="/" />;
+    return <Redirect to="/P_homepage" />;
   }
   return (
-    <div className="HomeBG">
+    <div className="P_HomeBG">
         <center><img src={baruch} width="200px" className="startpageicon" alt="baruch logo"/></center>
         <Container>
             <Row>
                 <Col md={6}>
-                <div>
-                    <strong><h2>Please Log in</h2></strong>
+                <div className="Login">
+                    <strong><h2>Baruch Educator</h2></strong>
                     <hr/>
                     <form onSubmit={handleLogin}>
                         <label className="expand">
@@ -50,17 +50,11 @@ const Login = ({ history }) => {
                         </label>
                         <br/>
                         <ButtonGroup vertical>
-                        <Dropdown as={ButtonGroup} >
-                        <Button size="md" variant="primary" type="submit"><strong>Login</strong></Button>
-                        <Dropdown.Toggle split variant="primary" className="loginbtn" id="dropdown-split-basic"/>
-                        <Dropdown.Menu>
-                          <Dropdown.Item componentClass={Link} href="/P_login" to="/">Login as Professor</Dropdown.Item>
-                          {/*<Dropdown.Item componentClass={Link} href="/SignUp" to="/">Login as Administrator</Dropdown.Item>*/}
-                        </Dropdown.Menu>
-                        </Dropdown>
+                        <Button size='lg' variant="primary"  type="submit"><strong>Login</strong></Button>
+                        <Button size='sm' variant="info" componentClass={Link} href="/login" to="/"><strong>Go Back</strong></Button>
+                        </ButtonGroup>
                         
                         {/*<Button size='sm' variant="info" className="expand" componentClass={Link} href="/signup" to="/"><strong>Register</strong></Button>*/}
-                        </ButtonGroup>
                     </form>
                     </div>
                 

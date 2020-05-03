@@ -3,8 +3,6 @@ import NavBar from './NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-
-
 class Add_Course extends Component {
   render(){
 return (

@@ -3,14 +3,13 @@ import "firebase/auth";
 import 'firebase/firestore';
 
 const config = {
-    apiKey: "AIzaSyByUtuM7nCJMZK4PWlztaCPXrAXRIytCoo",
-    authDomain: "whiteboard-8047a.firebaseapp.com",
-    databaseURL: "https://whiteboard-8047a.firebaseio.com/",
-    projectId: "whiteboard-8047a",
-    storageBucket: "whiteboard-8047a.appspot.com",
-    messagingSenderId: "1026487661768",
-    appId: "1:1026487661768:web:93ea7de652d4a11b1ee1fd",
-    measurementId: "G-4XC50CFZZ1"
+    apiKey: "AIzaSyBKDjEOIF0fqJa_lsqwgU6h5bRQ6mjir0c",
+    authDomain: "wb-2020.firebaseapp.com",
+    databaseURL: "https://wb-2020.firebaseio.com",
+    projectId: "wb-2020",
+    storageBucket: "wb-2020.appspot.com",
+    messagingSenderId: "564817487071",
+    appId: "1:564817487071:web:9768872cc48a816bb6f56a"
 };
 
 firebase.initializeApp(config);

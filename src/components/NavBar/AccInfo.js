@@ -36,7 +36,7 @@ return (
             </Col>
 
             <Col xs={5} md={5} className="expand">
-              <div className="blog">
+              <div className="separator">
             <strong><h3>Courses</h3></strong>
             <Button className="expand" variant="primary" componentClass={Link} href="/Add_Course" to="/">Edit</Button>
             </div>

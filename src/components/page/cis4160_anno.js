@@ -1,15 +1,15 @@
 import React from "react";
 import firebase from "../firebase/base";
-import { SpellInput } from "./SpellInput";
+import { SpellInput } from "./cis4160_add_anno";
 import {Button} from 'react-bootstrap';
 
-function Blogger() {
+function CisAnno() {
   const [spells, setSpells] = React.useState([]);
   const [newSpellName, setNewSpellName] = React.useState();
 
   React.useEffect(() => {
       const db = firebase.firestore();
-      const unsubscribe = db.collection("todolist").onSnapshot(snapshot => {
+      const unsubscribe = db.collection("cis4160_announcements").onSnapshot(snapshot => {
         const spellsData = [];
         snapshot.forEach(doc => spellsData.push({ ...doc.data(), id: doc.id }));
         setSpells(spellsData);
@@ -19,39 +19,31 @@ function Blogger() {
 
   const onCreate = () => {
     const db = firebase.firestore();
-    db.collection("todolist").add({ name: newSpellName });
+    db.collection("cis4160_announcements").add({ name: newSpellName });
   };
 
   return (
-    <div>
-    <br/>
-    <div>
-    <h4>
-    <strong>
-    To Do List
-    </strong>
 
-    </h4>
-    </div>
-    <hr/>
-
-    <ol>
+    <div>
       {spells.map(spell => (
-        <li key={spell.name}>
+        <div key={spell.name}>
           <SpellInput spell={spell}/>
-        </li>
+        </div>
       ))}
-    </ol>
+
       <textarea
         value={newSpellName}
         onChange={e => setNewSpellName(e.target.value)}
         className="inputwidth expand"
         placeholder="Enter here..."
       />
+
       <Button variant="primary" className="addwidth expand" onClick={onCreate}><strong>+</strong></Button>
       <br/>
     </div>
+
+
   );
 }
 
-export default Blogger;
+export default CisAnno;

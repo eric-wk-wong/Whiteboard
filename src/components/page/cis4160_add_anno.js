@@ -7,12 +7,12 @@ export const SpellInput = ({ spell }) => {
 
   const onUpdate = () => {
     const db = firebase.firestore()
-    db.collection('todolist').doc(spell.id).set({...spell, name})
+    db.collection('cis4160_announcements').doc(spell.id).set({...spell, name})
   }
 
   const onDelete = () => {
     const db = firebase.firestore()
-    db.collection('todolist').doc(spell.id).delete()
+    db.collection('cis4160_announcements').doc(spell.id).delete()
   }
 
   return (
@@ -23,6 +23,7 @@ export const SpellInput = ({ spell }) => {
           setName(e.target.value);
         }}
       />
+      
       <ButtonGroup vertical className="buttonheight">
       <Button size='sm' variant="primary" className="expand" onClick={onUpdate}><strong>Update</strong></Button>
       <Button size='sm' variant="primary" className="expand" onClick={onDelete}><strong>Delete</strong></Button>

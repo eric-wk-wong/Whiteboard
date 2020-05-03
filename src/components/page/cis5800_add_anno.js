@@ -2,17 +2,17 @@ import React from "react";
 import firebase from '../firebase/base'
 import {Button,ButtonGroup} from 'react-bootstrap';
 
-export const SpellInput = ({ spell }) => {
+export const SpellInput_5800 = ({ spell }) => {
   const [name, setName] = React.useState(spell.name);
 
   const onUpdate = () => {
     const db = firebase.firestore()
-    db.collection('todolist').doc(spell.id).set({...spell, name})
+    db.collection('cis5800_announcements').doc(spell.id).set({...spell, name})
   }
 
   const onDelete = () => {
     const db = firebase.firestore()
-    db.collection('todolist').doc(spell.id).delete()
+    db.collection('cis5800_announcements').doc(spell.id).delete()
   }
 
   return (

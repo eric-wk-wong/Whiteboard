@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Container,Row} from 'react-bootstrap';
-import NavBar from '../NavBar/NavBar';
-import TimesList from './blog'
+import NavBar from './NavBar';
+import TimesList from '../Blog/blog'
 
 
-class Blogging extends Component {
+class P_Blogging extends Component {
   render(){
 return (
-  <div className="HomeBG">
+  <div className="P_HomeBG">
     <NavBar/>
   <Container>
     <Row className="rowcenter toprow">
@@ -19,4 +19,4 @@ return (
 }
 }
 
-export default Blogging;
+export default P_Blogging;

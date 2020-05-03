@@ -29,12 +29,12 @@ const AddTimeEntryForm = () => {
             <h3>Baruch | Blog</h3>
             <div>
                 <label><strong>Title:</strong></label>
-                <input placeholder="Title here..." className="expand loginput layoutbg" type="text" value={title} onChange={e=>setTitle(e.currentTarget.value)}/>
+                <input placeholder="Title here..." className="expand blogtextbox layoutbg" type="text" value={title} onChange={e=>setTitle(e.currentTarget.value)}/>
             </div>
             <br/>
             <div>
                 <label><strong>Name:</strong></label>
-                <input placeholder="First, Last Name" className="expand loginput layoutbg" type="text" value={time} onChange={e=>setTime(e.currentTarget.value)}/>   
+                <input placeholder="First, Last Name" className="expand blogtextbox layoutbg" type="text" value={time} onChange={e=>setTime(e.currentTarget.value)}/>   
             </div>
             <br/>
             <div>
@@ -43,7 +43,7 @@ const AddTimeEntryForm = () => {
                 <textarea  placeholder="Blog..." className="expand bloginput layoutbg" type="text" value={note} onChange={e=>setNote(e.currentTarget.value)}/>   
             </div>
             <br/>
-            <button variant="primary"><strong>Upload</strong></button>
+            <button><strong>Upload</strong></button>
 
         </form>
     )

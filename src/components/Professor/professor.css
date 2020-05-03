@@ -1,0 +1,43 @@
+.P_HomeBG{
+  background:linear-gradient(to right,rgba(255, 255, 255, 0.568),rgba(0, 114, 220, 0.365));
+  background-size: cover;
+  min-height: 100vh;
+}
+.classmenu{
+  font-size: 10pt;
+  font-weight: 800;
+}
+
+.classmenu p{
+  font-size: 11pt;
+  font-weight: 800;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  margin-left: -5px;
+}
+
+
+
+.btn-size{
+  width:100%;
+}
+
+.edge{
+    display: flex;
+  justify-content: space-between;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  h5{
+    font-size:10pt;
+    margin:-10px;
+  }
+	p{
+		font-size: 8pt;
+    margin:-10px;
+	}
+
+}

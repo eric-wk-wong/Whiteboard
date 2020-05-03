@@ -1,45 +1,12 @@
-.App {
-  text-align: center;
-}
+@import "./components/Professor/professor.css";
+@import "./components/style_sheet/student.css";
+@import "./components/style_sheet/effect.css";
 
-.App-body {
-  background:linear-gradient(to bottom,rgb(255, 255, 255),rgba(25, 127, 150, 0.318),rgb(255, 255, 255));
-  min-height: 100vh;
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-  background-attachment: fixed;
-}
-
-.footer{
-  font-size: 7pt;
-  transition: transform 2s;
-}
-
-.footer:hover{
-  transform: scale(1.4) translate(0px,-25px);
-  font-weight: bolder;
-
-}
-
+/*Page style*/
 .HomeBG{
-  background:linear-gradient(to right,rgb(86, 188, 202),rgb(22, 71, 117));
+  background:linear-gradient(to right,rgb(86, 188, 202),rgb(22, 71, 117)); /*Student platform background*/
   background-size: cover;
   min-height: 100vh;
-}
-
-.anno{
-  font-size:9.5pt;
-}
-.moment{
-margin: -5.5%;
-}
-.toprow{
-  padding-top: 65px;
 }
 
 .rowcenter{
@@ -48,81 +15,195 @@ margin: -5.5%;
   background-attachment: fixed;
 }
 
-
-/*expand animation*/
-.expand{
-  transition: transform 1s;
-}
-.expand:hover{
-  transform: scale(1.03);
-}
-.menu-item{
-  padding-top: 3px;
+.toprow{
+  padding-top: 65px;
 }
 
-.list{
-  margin: 1px;
-  border-radius: 10px;
+.scroll Col{
+  overflow:scroll;
+  max-height: 200px;
 }
 
+.announcement{
+  font-size:9.5pt;
+}
 
-
-/*frosted glass effect*/
-.layoutbg{
-  position: relative;
-  background: inherit;
-  overflow: hidden;
-  border-radius: 10px;
-  z-index: 1;
+.cardlist a{
+  color:white;
+  float: left;
   text-align: left;
-  background-color: rgba(255, 255, 255, 0.219);  /*BG*/
-  margin: 1%;
-  
+  font-size: .9em;
+  margin: 2%;
+}
+.cardlist a:hover{
+  color:black;
+  text-decoration:none;
+}
+.card{
+  margin-top: 17px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
-.layoutbg:before{
-  content: "";
-  position: absolute;
-  background: inherit;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.753);
-  filter: blur(10px);
-  margin: -50px;
-  z-index: -1;
+
+/*App.js*/
+.App {
+  text-align: center;
 }
 
-#navbg{
-  height: 50px;
-  max-height: 50px; /* nav bar height*/
-  background-color:rgba(255, 255, 255, 0.585);
+.footer{
+  font-size: 7pt;
+  transition: transform 2s;
 }
 
-.acclogo{
-  margin-left: 35%;
+.footer:hover{
+  transform: scale(1.3) translate(0px,-25px);
+  font-weight: bolder;
 }
 
-#accicon{
-  margin-top: -10px;
-  border-radius:10px;
+/*Blog / add-blog.jsx*/
 
+.blogtextbox{
+  background-color: rgba(211, 211, 211, 0.4);
 }
 
-.blogicon{
-  border-radius: 10px;
+.bloginput{
+  background-color: rgba(211, 211, 211, 0.4);
+  height:400px;
+  width:100%;
+  border-color: white;
+}
+.logform{
   width: 100%;
+  margin-bottom: 5%;
+}
+
+/*Blog / blog.jsx*/
+
+.time-entry{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align:left;
+}
+
+.time{
+  color: #ffffff;
 }
 
 .blog{
   display: flex;
   justify-content: space-between;
 }
-.loginpage{
-  font-size: 18pt;
+
+.blogbody{
+  padding-left:8px;
+  padding-right:2px;
 }
 
+/*Blog / Blogging*/
+/*none*/
+
+/*Blog / popwindow*/
+
+.blogicon{
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*Feature / Calendar*/
+/*It is in the style sheet folder*/
+
+/*Feature / Courses*/
+
+.courses{
+  width: 100%;;
+  margin-left:-1%;
+  margin-top:1.5%;
+  margin-bottom:2%;
+}
+
+.icon{
+  width:100%;
+  margin: 1%;
+  padding-top: 20px;
+}
+
+/*Feature / listgroups*/
+.list{
+  margin: 1px;
+  border-radius: 10px;
+}
+
+/*Feature / moment*/
+
+.Carousels{
+  margin: -5.5%;
+  }
+
+/*Feature / section*/
+
+.card-body{
+  width: auto;
+  margin-top: -20px;
+}
+
+/*Feature / sidebar*/
+
+.menu-item{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: transform 1s;
+}
+
+.menu-item:hover{
+  transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+/*firebase / login.js*/
+
+.startpageicon{
+  margin-bottom: 5%;
+  margin-top: 30px;
+}
+
+.loginbtn{
+  width:10%;
+}
+
+/*firebase / P_login.js*/
+/*It is in the Professor's folder*/
+
+/*firebase / signup*/
+/*Share code with login*/
+
+
+
+/*NavBar / AccInfo*/
+
+.separator{
+  display: flex;
+  justify-content: space-between;
+}
 
 .courseinfo{
   text-align: left;
@@ -135,63 +216,30 @@ margin: -5.5%;
   padding-top: 2%;
 }
 
-.courses{
-  width: 100%;;
-  margin-left:-1%;
-  margin-top:1.5%;
-  margin-bottom:2%;
-}
-.scroll Col{
-  overflow:scroll;
-  max-height: 200px;
+#progress{
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-
-.contain{
-  width: 30%;
-  color: #000000;
-  border-radius: 10px;
-}
-.startpageicon{
-  margin-bottom: 5%;
-  margin-top: 30px;
-}
-
+/*NavBar / navbar*/
 .homepageicon{
   padding-left: 60px;
 }
 
-
-button{
-  width: 100%;
+#navbg{
+  height: 50px;
+  max-height: 50px; /* nav bar height*/
+  background-color:rgba(255, 255, 255, 0.585);
 }
 
+#accicon{
+  margin-top: -10px;
+  border-radius:10px;
 
-.loginbtn{
-  width:10%;
 }
 
-
-.inputwidth{
-  width:88%;
-  margin:0px;
-  color:navy;
-  border-radius: 10px;
-  font-size:8pt;
-  height:50px;
-  border-color: white;
-}
-
-.addwidth{
-  width:10%;
-  float: right;
-}
-
-.addblog{
-  width: 10%;
-  float:right;
-}
-
+/*todolist spellinput*/
 .todolist{
   font-size:9pt;
   height:70px;
@@ -201,13 +249,39 @@ button{
   border-radius: 10px;
   border-color: white;
   margin-right:2%;
-  margin-bottom:-5%;
-  margin-top:-3%;
+  margin-bottom:-30px;
   max-height:120px;
+  min-height: 70px;
 }
+
 
 .buttonheight{
   width:18%;
+}
+
+/*todolist / todolist*/
+.inputwidth{
+  width:88%;
+  margin:0px;
+  color:navy;
+  border-radius: 10px;
+  font-size:8pt;
+  height:50px;
+  border-color: white;
+  min-height:50px;
+  max-height:120px;
+}
+
+.addwidth{
+  width:10%;
+  float: right;
+}
+
+
+
+/*General*/
+button{
+  width: 100%;
 }
 
 h1{
@@ -216,49 +290,20 @@ h1{
   text-align: center;
 }
 
-.icon{
-  width:100%;
-  margin: 1%;
-  padding-top: 20px;
+form {
+	display: flex;
+	justify-content: top;
+  flex-direction:column;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+  text-align: center;
 }
 
 
-.card{
-  margin-top: 17px;
-  margin-bottom: 10px;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.loginicon{
-  margin-top: -25px;
-  margin-bottom: -18px;
-  margin-left: 20px;
-  margin-right:20px;
-}
-
-.blogbody{
-  padding-left:8px;
-  padding-right:2px;
-}
-
-.shrink{
-  margin-top: 12px;
-  max-width: auto;
-  min-width: 100px;
-}
-
-.card-body{
-  width: auto;
-  margin-top: -20px;
-}
 
 /*Side bar section   */
 
-#page-wrap {
-  text-align: center;
-  overflow: auto;
-}
 
 .bm-item {
   display: inline-block;
@@ -291,11 +336,7 @@ h1{
   background: #126bba;  /* side bar button color*/
 }
 
-#progress{
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
+
 
 .bm-cross-button {
   height: 24px;
@@ -356,44 +397,8 @@ button.ghost {
 }
 
 
-form {
-	display: flex;
-	justify-content: top;
-  flex-direction:column;
-  padding-left: 5%;
-  padding-right: 5%;
-  height: 100%;
-  text-align: center;
-}
-
-/*To Do List*/
-.time-entry{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  text-align:left;
-}
-
-.time{
-  color: #ffffff;
-}
-
-.logform{
-  width: 100%;
-  margin-bottom: 5%;
-}
-
-
-.loginput{
-  background-color: rgba(211, 211, 211, 0.4);
-}
 
 
 
-.bloginput{
-  background-color: rgba(211, 211, 211, 0.4);
-  height:400px;
-  width:100%;
-  border-color: white;
-}
+
+
