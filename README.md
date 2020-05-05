@@ -2,7 +2,8 @@
 
 This is the newest version of the prototype.
 
-The components will be install with underneath
+
+## Required Components:
 
   Schedule
     npm install @syncfusion/ej2-react-schedule
