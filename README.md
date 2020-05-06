@@ -6,26 +6,26 @@ This is the newest version of the prototype.
 ### Required Components
 
 Schedule
-- npm install @syncfusion/ej2-react-schedule
+>npm install @syncfusion/ej2-react-schedule
     
 Boostrap
-- npm install bootstrap
+>npm install bootstrap
     
 Firebase
-- npm install firebase --save
+>npm install firebase
 
 Moment
-- npm install moment
+>npm install moment
 
 React Boostrap
-- npm install react-bootstrap bootstrap
+>npm install react-bootstrap bootstrap
 
 React burger-menu
-- npm install react-burger-menu --save
+>npm install react-burger-menu
 
 React Router
-- npm install react-router --save
-- npm install react-router-dom --save
+>npm install react-router
+>npm install react-router-dom
 
 React Spring
-- npm install react-spring --save
+>npm install react-spring
