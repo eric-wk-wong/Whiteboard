@@ -30,10 +30,10 @@ return (
     </Row>
     <hr/>
     <Row className="rowcenter">
-      
+
       <Col md={12} className="layoutbg expand">
       <br/>
-      <ClassTab/>
+      <ClassTab />
       </Col>
     </Row>
     <hr/>

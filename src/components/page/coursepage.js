@@ -3,21 +3,23 @@ import {Row,Col,Button,Container,ListGroup,Tab,Tabs,ButtonGroup} from 'react-boo
 import NavBar from '../Professor/NavBar';
 import '../Professor/professor.css';
 import '../style_sheet/effect.css';
-import CisAnno from './cis4160_anno';
+import Announcement from './Announcement';
 import Cis4160_agenda from './cis4160_agenda';
-import Cis4160_assignment from './cis4160_assignment';
-import{Link} from 'react-router-dom';
+import Assignment from './Assignment';
+import {Link} from 'react-router-dom';
 import CreateButton from './popwindow';
+import EditGrade from './GradingPage';
 
-class CIS4160 extends Component {
+class Courses extends Component {
   render(){
+      console.log(this.props)
 return (
 <div className="P_HomeBG">
     <NavBar/>
   <Container>
   <Row className="rowcenter toprow">
   <Col md={12}>
-  <h3>Dummy course ####</h3>
+  <h3>{this.props.location.state.registeredCourse}</h3>
   </Col>
   </Row>
   <hr/>
@@ -32,8 +34,8 @@ return (
           <h4>Announcement</h4>
           </div>
           <hr/>
-          <CisAnno/>
-          </div>  
+          <Announcement state={this.props.location.state}/>
+          </div>
           </Tab>
 
     <Tab eventKey="assignment" title="Assignment">
@@ -43,15 +45,16 @@ return (
           <h4>Assignment</h4>
 
           <ButtonGroup size="md">
-            <Link className="expand" to="/GradingPage"><Button variant="info"><b>Edit Grade</b></Button></Link>
-            <CreateButton/>
+            <Link className="expand" to={{pathname:'/GradingPage', state:{userCourse: this.props.location.state.userCourse,
+                                                                          registererdCourse: this.props.location.state.registeredCourse}}}><Button variant="info"><b>Edit Grade</b></Button></Link>
+            <CreateButton state={this.props.location.state}/>
           </ButtonGroup>
           </div>
           <hr/>
-          <Cis4160_assignment/>
-          </div>  
+          <Assignment state={this.props.location.state}/>
+          </div>
           </Tab>
-    
+
     <Tab eventKey="agenda" title="Agenda">
       <div>
       <br/>
@@ -59,12 +62,12 @@ return (
           <h4>Agenda</h4>
           </div>
           <hr/>
-          <Cis4160_agenda/>
-          </div>  
-          </Tab>   
+          <Cis4160_agenda state={this.props.location.state}/>
+          </div>
+          </Tab>
 </Tabs>
       </Container>
-      
+
 
 
 </div>
@@ -72,4 +75,4 @@ return (
 }
 }
 
-export default CIS4160;
+export default Courses;
