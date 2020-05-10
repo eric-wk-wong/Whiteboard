@@ -1,6 +1,6 @@
 import React from "react";
 import firebase from '../firebase/base'
-import {Button,ButtonGroup} from 'react-bootstrap';
+import {Button,ButtonGroup,Table, Row, Col} from 'react-bootstrap';
 
 export const SpellInput4160_agenda = ({ spell }) => {
   const [name, setName] = React.useState(spell.name);

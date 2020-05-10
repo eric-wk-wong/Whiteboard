@@ -56,48 +56,6 @@ return (
       <br/>
       </Col>
     </Row>
-    <hr/>
-
-    <Row className="scroll"> 
-      <Col className="expand">
-      <Card bg="primary" text="white" style={{ width:"auto", marginTop:"10px"}}>
-    <Card.Header><h6>Baruch College Receives Top Rankings:</h6></Card.Header>
-    <Card.Body>
-      <Card.Text>
-        <div class="cardlist">
-        <a href="#">2021 Best Graduate Schools</a>
-        </div>
-          
-
-        </Card.Text>
-        </Card.Body>
-        </Card>
-      </Col>
-      <Col className="expand">
-      <Card bg="info" text="white" style={{ width:"auto", marginTop:"10px"}}>
-    <Card.Header><h5>Header</h5></Card.Header>
-    <Card.Body>
-      <Card.Title><h6>Primary Card Title</h6></Card.Title>
-      <Card.Text><h6>
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-        </h6>
-        </Card.Text>
-        </Card.Body>
-        </Card>
-      </Col>
-      <Col className="expand">
-      <Card bg="secondary" text="white" style={{ width:"auto", marginTop:"10px"}}>
-    <Card.Header><h5>Header</h5></Card.Header>
-    <Card.Body>
-      <Card.Title><h6>Primary Card Title</h6></Card.Title>
-      <Card.Text><h6>
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-        </h6>
-        </Card.Text>
-        </Card.Body>
-        </Card>
-        </Col>
-      </Row>
       <hr/>
       <Row>
         <ListGroups/>

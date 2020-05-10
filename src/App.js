@@ -14,13 +14,14 @@ import Add_Course from './components/NavBar/Add_Course';
 import Edit_AccInfo from './components/NavBar/Edit_AccInfo';
 import P_homepgae from './components/Professor/P_homepage';
 import P_login from './components/firebase/P_login';
-import CIS5800 from './components/page/cis5800';
-import CIS4160 from './components/page/cis4160';
+import CIS4160 from './components/page/coursepage';
 import HelpDesk from './components/Features/helpdesk';
 import CIS4160_grading from './components/page/cis4160_grading';
-import CIS5800_grading from './components/page/cis5800_grading';
 import P_Blogging from './components/Professor/P_blogging';
 import CIS4160_course from './components/courses/CIS4160';
+import GradingPage from './components/page/GradingPage';
+import ProfInfo from './components/Professor/P_Info';
+import StudentPage from './components/Features/StudentPage'
 
 class App extends Component {
   render(){
@@ -43,11 +44,12 @@ class App extends Component {
         <Route path='/Add_Course' component={Add_Course} />
         <Route path='/Edit_AccInfo' component={Edit_AccInfo}/>
         <Route path='/HelpDesk' component={HelpDesk}/>
-        <Route path='/CIS5800' component={CIS5800}/>
         <Route path='/CIS4160' component={CIS4160}/>
         <Route path='/CIS4160_course' component={CIS4160_course}/>
         <Route path='/CIS4160_grading' component={CIS4160_grading}/>
-        <Route path='/CIS5800_grading' component={CIS5800_grading}/>
+        <Route path='/GradingPage' component={GradingPage}/>
+        <Route path='/ProfInfo' component={ProfInfo}/>
+        <Route path='/StudentPage' component={StudentPage}/>
         </Switch>
         
         </AuthProvider>

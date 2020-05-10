@@ -5,9 +5,8 @@ function Courses() {
 
 return (
     <div className="courses">
-<Button variant="primary" className="icon expand" componentClass={Link} href="/CIS4160_course" to="/"><strong>CIS 4160</strong></Button>
-<Button variant="danger" className="icon expand"  componentClass={Link} href="/CIS5800_course" to="/"><strong>CIS 5800</strong></Button>
-</div>
+        <Link className="icon expand" to="/StudentPage"><Button variant="primary"><strong>CIS 4160</strong></Button></Link>
+        </div>
 
 );
 }

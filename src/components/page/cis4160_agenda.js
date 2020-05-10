@@ -25,11 +25,7 @@ function Cis4160_agenda() {
   return (
 
     <div>
-      {spells.map(spell => (
-        <div key={spell.name}>
-          <SpellInput4160_agenda spell={spell}/>
-        </div>
-      ))}
+      
 
       <textarea
         value={newSpellName}
@@ -39,7 +35,13 @@ function Cis4160_agenda() {
       />
 
       <Button variant="primary" className="addwidth expand" onClick={onCreate}><strong>+</strong></Button>
-      <br/>
+      <hr/>
+
+      {spells.map(spell => (
+        <div key={spell.name}>
+          <SpellInput4160_agenda spell={spell}/>
+        </div>
+      ))}
     </div>
 
 

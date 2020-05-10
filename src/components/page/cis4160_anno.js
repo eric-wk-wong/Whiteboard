@@ -25,11 +25,7 @@ function CisAnno() {
   return (
 
     <div>
-      {spells.map(spell => (
-        <div key={spell.name}>
-          <SpellInput spell={spell}/>
-        </div>
-      ))}
+      
 
       <textarea
         value={newSpellName}
@@ -39,7 +35,13 @@ function CisAnno() {
       />
 
       <Button variant="primary" className="addwidth expand" onClick={onCreate}><strong>+</strong></Button>
-      <br/>
+      <hr/>
+
+      {spells.map(spell => (
+        <div key={spell.name}>
+          <SpellInput spell={spell}/>
+        </div>
+      ))}
     </div>
 
 

@@ -1,5 +1,4 @@
 @import "./components/Professor/professor.css";
-@import "./components/style_sheet/student.css";
 @import "./components/style_sheet/effect.css";
 
 /*Page style*/
@@ -252,6 +251,35 @@
   margin-bottom:-30px;
   max-height:120px;
   min-height: 70px;
+}
+
+.inputlist{
+  font-size:9pt;
+  height:70px;
+  min-width: 100%;
+  font-weight:550;
+  color:navy;
+  border-radius: 10px;
+  border-color: white;
+  margin-right:2%;
+  margin-bottom:-30px;
+  max-height:120px;
+  min-height: 70px;
+}
+
+.inputlist{
+  font-size:9pt;
+  height:70px;
+  width:auto;
+  font-weight:550;
+  color:navy;
+  border-radius: 10px;
+  border-color: white;
+  margin-right:2%;
+  margin-bottom:-30px;
+  max-height:20px;
+  min-height: 30px;
+  max-width: auto;
 }
 
 

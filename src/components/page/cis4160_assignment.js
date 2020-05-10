@@ -25,21 +25,22 @@ function Cis4160_assignment() {
   return (
 
     <div>
+      {/*
+      <textarea
+        value={newSpellName}
+        onChange={e => setNewSpellName(e.target.value)}
+        className="inputwidth expand"
+        placeholder="Desciprion here..."
+      />
+
+      <Button variant="primary" className="addwidth expand" onClick={onCreate}><strong>+</strong></Button>
+      <hr/>*/}
+
       {spells.map(spell => (
         <div key={spell.name}>
           <SpellInput4160_assignment spell={spell}/>
         </div>
       ))}
-
-      <textarea
-        value={newSpellName}
-        onChange={e => setNewSpellName(e.target.value)}
-        className="inputwidth expand"
-        placeholder="Enter here..."
-      />
-
-      <Button variant="primary" className="addwidth expand" onClick={onCreate}><strong>+</strong></Button>
-      <br/>
     </div>
 
 

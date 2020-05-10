@@ -1,5 +1,5 @@
 import React from 'react';
-import {ListGroup,Tab,Col,Row,Button, Table} from 'react-bootstrap';
+import {ListGroup,Tab,Col,Row,Button, Table,ButtonGroup } from 'react-bootstrap';
 import{Link} from 'react-router-dom';
 import './professor.css';
 import '../style_sheet/effect.css';
