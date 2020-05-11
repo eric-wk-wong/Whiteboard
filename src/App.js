@@ -46,7 +46,6 @@ class App extends Component {
         <Route path='/HelpDesk' component={HelpDesk}/>
         <Route path='/coursepage' component={Courses}/>
         <Route path='/CIS4160_grading' component={CIS4160_grading}/>
-        <Route path='/GradingPage' compocnent={GradingPage}/>
         <Route path='/GradingPage' component={GradingPage}/>
         <Route path='/ProfInfo' component={ProfInfo}/>
         <Route path='/StudentPage' component={StudentPage}/>
