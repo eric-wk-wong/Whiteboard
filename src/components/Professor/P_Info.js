@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import NavBar from './NavBar';
 import { Button,Container, Row, Col } from 'react-bootstrap';
-import Courses from '../Features/Courses';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import{Link} from 'react-router-dom';
 
@@ -35,12 +34,6 @@ return (
             </Col>
 
             <Col xs={5} md={5} className="expand">
-              <div className="separator">
-            <strong><h3>Courses</h3></strong>
-            </div>
-            <hr/>
-            <Courses/>
-            
             </Col>
           </Row>
         </Container>

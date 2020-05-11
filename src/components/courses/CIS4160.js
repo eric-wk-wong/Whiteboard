@@ -1,6 +1,6 @@
 import React from "react";
 import firebase from "../firebase/base";
-import { SpellInput4160_assignment } from "../page/cis4160_add_assignment";
+import { SpellInput_assignment } from "../page/add_assignment";
 
 function CIS4160_course() {
   const [spells, setSpells] = React.useState([]);
@@ -25,7 +25,7 @@ function CIS4160_course() {
     <div>
       {spells.map(spell => (
         <div key={spell.name}>
-          <SpellInput4160_assignment spell={spell}/>
+          <SpellInput_assignment spell={spell}/>
         </div>
       ))}
     </div>

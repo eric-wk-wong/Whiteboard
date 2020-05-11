@@ -19,11 +19,11 @@ function MyVerticallyCenteredModal(props) {
         <Form>
         <Form.Group>
             <Form.Label><b>Category</b></Form.Label>
-            <Form.Control as="select" value="Choose...">
-                <option>Category...</option>
-                <option>Assignment</option>
-                <option>Project</option>
-                <option>Exam</option>
+            <Form.Control as="select">
+                <option selected>Category</option>
+                <option value="assignment">Assignment</option>
+                <option value="project">Project</option>
+                <option value="exam">Exam</option>
             </Form.Control>
             </Form.Group>
             <Form.Group >

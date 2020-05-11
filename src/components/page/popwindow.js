@@ -2,7 +2,7 @@ import React from "react";
 import {Button, ButtonToolbar, Modal,Form,Col} from 'react-bootstrap';
 import baruch from '../images/baruchlogo.png';
 import firebase from '../firebase/base'
-import MyVerticallyCenteredModal from './createAssignmentForm'
+import MyVerticallyCenteredModal from './createassignmentform'
 
 
 function PopWindow(props) {
