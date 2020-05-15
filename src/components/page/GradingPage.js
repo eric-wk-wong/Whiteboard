@@ -54,7 +54,8 @@ class GradingPage extends React.Component {
           arrA.push(student.name)
           arrP.push(student.name)
           arrE.push(student.name)
-          arrA.push('abc')
+          arrA.push('100')
+          arrA.push('90')
           db.doc(this.props.location.state.userCourse).collection('assignment').get().then( snapshot =>{
               snapshot.forEach(doc=>{
                 db.doc(this.props.location.state.userCourse).collection('assignment').doc(doc.id).collection('student').get().then(query=>{
