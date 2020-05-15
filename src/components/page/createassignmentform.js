@@ -47,6 +47,7 @@ function MyVerticallyCenteredModal(props) {
             }
           )
         })
+        window.location.reload(false);
       })
   }
     return (
@@ -65,11 +66,10 @@ function MyVerticallyCenteredModal(props) {
         <Form>
         <Form.Group>
             <Form.Label><b>Category</b></Form.Label>
-            <Form.Control as="select" value="Choose..." onChange={e => {setCategory(e.target.value)}} >
-                <option>Category...</option>
-                <option>Assignment</option>
-                <option>Project</option>
-                <option>Exam</option>
+            <Form.Control as="select" onChange={e => {setCategory(e.target.value)}} >
+                <option value="Assignment">Assignment</option>
+                <option value="Project">Project</option>
+                <option value="Exam">Exam</option>
             </Form.Control>
             </Form.Group>
         <Form.Row>

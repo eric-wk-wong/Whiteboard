@@ -11,6 +11,7 @@ import CreateButton from './popwindow';
 import firebase from '../firebase/base';
 
 class GradingPage extends React.Component {
+
   state={
     allStudent: [],
     allAssignment: [],
@@ -53,6 +54,7 @@ class GradingPage extends React.Component {
           arrA.push(student.name)
           arrP.push(student.name)
           arrE.push(student.name)
+          arrA.push('abc')
           db.doc(this.props.location.state.userCourse).collection('assignment').get().then( snapshot =>{
               snapshot.forEach(doc=>{
                 db.doc(this.props.location.state.userCourse).collection('assignment').doc(doc.id).collection('student').get().then(query=>{
