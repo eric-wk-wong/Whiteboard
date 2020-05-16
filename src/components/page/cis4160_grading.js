@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Row,Col,Button,Container} from 'react-bootstrap';
+import {Row,Col,Container} from 'react-bootstrap';
 import NavBar from '../Professor/NavBar';
 import '../Professor/professor.css';
 import '../style_sheet/effect.css';

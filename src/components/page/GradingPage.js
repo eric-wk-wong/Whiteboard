@@ -1,13 +1,8 @@
-import React, {Component} from 'react';
-import {Row,Col,Button,Container,ListGroup,Tab,Tabs,ButtonGroup,Table} from 'react-bootstrap';
+import React from 'react';
+import {Row,Col,Container,ListGroup,Tab,Table} from 'react-bootstrap';
 import NavBar from '../Professor/NavBar';
 import '../Professor/professor.css';
 import '../style_sheet/effect.css';
-import Announcement from './Announcement';
-import Cis4160_agenda from './cis4160_agenda';
-import Assignment from './Assignment';
-import{Link} from 'react-router-dom';
-import CreateButton from './popwindow';
 import firebase from '../firebase/base';
 
 class GradingPage extends React.Component {
@@ -28,11 +23,11 @@ class GradingPage extends React.Component {
       var db = firebase.firestore()
       db.doc(this.props.location.state.userCourse).collection('assignment').get().then( snapshot =>{
           snapshot.forEach(doc=>{
-            if(doc.data().category == "Assignment"){
+            if(doc.data().category === "Assignment"){
               this.setState({allAssignment: [...this.state.allAssignment, doc.data()]})
-          }else if(doc.data().category == "Project"){
+          }else if(doc.data().category === "Project"){
             this.setState({allProject: [...this.state.allProject, doc.data()]})
-        }else if(doc.data().category == "Exam"){
+        }else if(doc.data().category === "Exam"){
           this.setState({allExam: [...this.state.allExam, doc.data()]})}
         })
       })
@@ -43,7 +38,7 @@ class GradingPage extends React.Component {
              course = true
            }
           })
-          if(course == true && user.data().type == 'student'){
+          if(course == true && user.data().type === 'student'){
             this.setState({allStudent:[...this.state.allStudent, {id: user.data().id, name: user.data().name}]})
           }
         });
@@ -54,17 +49,19 @@ class GradingPage extends React.Component {
           arrA.push(student.name)
           arrP.push(student.name)
           arrE.push(student.name)
-          arrA.push('100')
-          arrA.push('90')
+          arrA.push('##')
+          arrA.push('##')
+          arrA.push('##')
+
           db.doc(this.props.location.state.userCourse).collection('assignment').get().then( snapshot =>{
               snapshot.forEach(doc=>{
                 db.doc(this.props.location.state.userCourse).collection('assignment').doc(doc.id).collection('student').get().then(query=>{
                   query.forEach(querysnapshot=>{
-                    if(querysnapshot.data().studentid == student.id && doc.data().category == 'Assignment'){
+                    if(querysnapshot.data().studentid === student.id && doc.data().category === 'Assignment'){
                       arrA.push(querysnapshot.data().grade)
-                    }else if(querysnapshot.data().studentid == student.id && doc.data().category == 'Project'){
+                    }else if(querysnapshot.data().studentid === student.id && doc.data().category === 'Project'){
                       arrP.push(querysnapshot.data().grade)
-                    }else if(querysnapshot.data().studentid == student.id && doc.data().category == 'Exam'){
+                    }else if(querysnapshot.data().studentid === student.id && doc.data().category === 'Exam'){
                       arrE.push(querysnapshot.data().grade)
                     }
                   })

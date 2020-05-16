@@ -18,7 +18,6 @@ import Courses from './components/page/coursepage';
 import HelpDesk from './components/Features/helpdesk';
 import CIS4160_grading from './components/page/cis4160_grading';
 import P_Blogging from './components/Professor/P_blogging';
-import CIS4160_course from './components/courses/CIS4160';
 import GradingPage from './components/page/GradingPage';
 import ProfInfo from './components/Professor/P_Info';
 import StudentPage from './components/Features/StudentPage'

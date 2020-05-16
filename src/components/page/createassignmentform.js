@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, ButtonToolbar, Modal,Form,Col} from 'react-bootstrap';
+import {Button, Modal,Form,Col} from 'react-bootstrap';
 import baruch from '../images/baruchlogo.png';
 import firebase from '../firebase/base'
 
@@ -8,9 +8,6 @@ function MyVerticallyCenteredModal(props) {
   const [title, setTitle] = React.useState(null)
   const [gradeWeight, setGradeWeight] = React.useState(null)
   const [description, setDescription] = React.useState(null)
-  const [grade, setGrade] = React.useState(null)
-  const [id, setId] = React.useState(null)
-  const [assignmentId, setAssignmentId] = React.useState(null)
   const onCreate = () =>{
     const db = firebase.firestore()
     db.doc(props.state.userCourse).collection('assignment').add(    {

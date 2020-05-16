@@ -15,7 +15,7 @@ return (
   <Navbar.Toggle />
   <Navbar.Collapse className="justify-content-end">
     <Navbar.Text>
-    <Spinner animation="grow" variant="primary" /> 
+    <Spinner animation="grow" variant="primary" />
     <ButtonGroup>
     <Button id="accicon" className="expand" variant="primary" componentClass={Link} href="/AccInfo" to="/">My Account</Button>
     </ButtonGroup>

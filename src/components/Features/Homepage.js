@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -19,7 +18,7 @@ return (
     <NavBar/>
   <Container>
     <Row className="rowcenter toprow">
-      
+
       <Col md={12} className="layoutbg expand">
       <br/>
         <h5>Total Confirmed Cases: 2500</h5>
@@ -61,7 +60,7 @@ return (
         <ListGroups/>
         <br/>
       </Row>
-      
+
 
       </Container>
 </div>

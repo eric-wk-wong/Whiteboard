@@ -1,7 +1,5 @@
 import React from "react";
-import {Button, ButtonToolbar, Modal,Form,Col} from 'react-bootstrap';
-import baruch from '../images/baruchlogo.png';
-import firebase from '../firebase/base'
+import {Button, ButtonToolbar} from 'react-bootstrap';
 import MyVerticallyCenteredModal from './createassignmentform'
 
 

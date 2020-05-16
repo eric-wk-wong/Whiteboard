@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import {ListGroup,Tab,Col,Row,Button, Table} from 'react-bootstrap';
 import{Link} from 'react-router-dom';
 import './professor.css';

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {Table,Row,Col,Button,Container,ListGroup,Tab,Tabs,ButtonGroup} from 'react-bootstrap';
+import {Table,Row,Col,Container,Tab,Tabs} from 'react-bootstrap';
 import NavBar from '../NavBar/NavBar';
-import{Link} from 'react-router-dom';
 import ViewGrades from './popgrade';
 import Submission from './popsubmission';
 class StudentPage extends Component {
@@ -25,11 +24,11 @@ return (
         <br/>
         <div className="edge">
           <h4>Announcement</h4>
-          
+
           </div>
           <hr/>
 
-      <textarea placeholder="Announcement here" className="expand bglayout inputlist" />          
+      <textarea placeholder="Announcement here" className="expand bglayout inputlist" />
           </div>
           </Tab>
 
@@ -51,39 +50,39 @@ return (
             </Col>
             <Col  xs={3} md={3}>
               <b><p>Category:XXXXX</p></b>
-              
+
             </Col>
             <Col  xs={3} md={3}>
             <Submission/>
-    
+
             </Col>
 
-           
+
           </Row>
           <Row  className="edge">
           <textarea placeholder="Description here" className="expand bglayout inputlist" />
-          
+
           </Row>
           </Table>
           </div>
           </Tab>
-    
+
     <Tab eventKey="agenda" title="Agenda">
       <div>
       <br/>
         <div className="edge">
           <h4>Agenda</h4>
           </div>
-          
+
           <hr/>
-          
+
                 <textarea placeholder="Agenda here" className="expand bglayout inputlist" />
-                
+
           </div>
-          </Tab>   
+          </Tab>
 </Tabs>
       </Container>
-      
+
 
 
 </div>

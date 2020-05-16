@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Row,Col,Button,Container,ListGroup,Tab,Tabs,ButtonGroup} from 'react-bootstrap';
+import {Row,Col,Button,Container,Tab,Tabs,ButtonGroup} from 'react-bootstrap';
 import NavBar from '../Professor/NavBar';
 import '../Professor/professor.css';
 import '../style_sheet/effect.css';
@@ -8,7 +8,6 @@ import Cis4160_agenda from './cis4160_agenda';
 import Assignment from './Assignment';
 import {Link} from 'react-router-dom';
 import CreateButton from './popwindow';
-import EditGrade from './GradingPage';
 
 class Courses extends Component {
   render(){

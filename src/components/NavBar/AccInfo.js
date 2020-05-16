@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import NavBar from './NavBar';
 import { Button,Container, Row, Col } from 'react-bootstrap';
-import Courses from '../Features/Courses';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import{Link} from 'react-router-dom';
 import firebase from '../firebase/base';

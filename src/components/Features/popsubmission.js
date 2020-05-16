@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, ButtonToolbar, Modal,Form,Col} from 'react-bootstrap';
+import {Button, ButtonToolbar, Modal,Form} from 'react-bootstrap';
 import baruch from '../images/baruchlogo.png';
 
 function MyVerticallyCenteredModal(props) {
@@ -47,16 +47,16 @@ function MyVerticallyCenteredModal(props) {
       </Modal>
     );
   }
-  
+
   function PopSubmission() {
     const [modalShow, setModalShow] = React.useState(false);
-  
+
     return (
       <ButtonToolbar>
         <Button size='sm' className="blogicon expand" variant="primary" onClick={() => setModalShow(true)}>
           <strong>Submit</strong>
         </Button>
-  
+
         <MyVerticallyCenteredModal
           show={modalShow}
           onHide={() => setModalShow(false)}

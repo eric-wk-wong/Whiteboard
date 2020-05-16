@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar,Button,ButtonGroup} from 'react-bootstrap';
+import {Navbar,Button} from 'react-bootstrap';
 import{Link} from 'react-router-dom';
 import baruch from '../images/baruchlogo.png';
 import SideBar from '../Features/sidebar';
@@ -14,7 +14,7 @@ return (
         <a componentClass={Link} href="/P_homepage" className="homepageicon expand"><img src={baruch} width="150px" alt="baruch logo"/></a>
   <Navbar.Toggle />
   <Navbar.Collapse className="justify-content-end">
-  <Spinner animation="grow" variant="primary" /> 
+  <Spinner animation="grow" variant="primary" />
     <Navbar.Text>
     <Link id="accicon" className="expand" to="/ProfInfo"><Button variant="primary" >My Account</Button></Link>
     </Navbar.Text>

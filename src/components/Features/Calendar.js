@@ -276,7 +276,7 @@ export default class Calendar extends React.Component {
           className="calendar-button button-next"
         />
         </div>
-       
+
         <div className="calendar-date">
           {this.state.showYearTable && <this.YearTable props={this.year()} />}
           {this.state.showMonthTable && (
